@@ -32,7 +32,7 @@ const BurguerMenu: React.FC<BurguerMenuProps> = ({ isOpen, setIsOpen, posts, chi
         }`}
       >
         {/* Background with opacity */}
-        <div className="absolute inset-0 bg-black opacity-90"></div>
+        <div className="absolute inset-0 bg-black  md:opacity-90"></div>
 
         {/* Sidebar content */}
         <div className="relative flex flex-col h-full justify-evenly items-center text-lg md:text-xl lg:text-2xl font-bold space-y-4 md:space-y-6 overflow-y-auto [&::-webkit-scrollbar]:w-2
