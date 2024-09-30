@@ -20,7 +20,8 @@ export const MenuButtonImage = ({ editor }: MenuButtonImageProps) => {
     const file = target.files?.[0];
     if (file?.type.startsWith('image/')) {
       const url = URL.createObjectURL(file);
-      editor.chain().focus().setResizableImage({ src: url }).run();
+      editor.chain().setImage({ src: url }).focus().run();
+
     }
   };
 

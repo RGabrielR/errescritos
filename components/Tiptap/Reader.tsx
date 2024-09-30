@@ -3,7 +3,7 @@
 import { extensions } from './extensions';
 import { EditorContent, useEditor } from '@tiptap/react';
 import React from 'react';
-import { Post } from './page';
+import { Post } from '../../interface/post';
 
 interface ReaderProps {
   post: Post;
@@ -11,7 +11,7 @@ interface ReaderProps {
 
 const Reader = ({ post }: ReaderProps) => {
   const editor = useEditor({
-    content: post.content,
+    content: post.body,
     extensions: [...extensions],
     editable: false,
     immediatelyRender: false,
